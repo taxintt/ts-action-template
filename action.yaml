@@ -1,5 +1,5 @@
-name: typescript-action
-description: Template of TypeScript Action
+name: ts-action
+description: Project Template of Action which is written by TypeScript
 
 inputs:
   name:
