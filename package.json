@@ -1,0 +1,35 @@
+{
+  "name": "ts-action-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "format": "prettier --write '**/*.ts'",
+    "format-check": "prettier --check '**/*.ts'",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "actions",
+    "node"
+  ],
+  "author": "taxintt",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "esbuild": "^0.14.38",
+    "esbuild-jest": "^0.5.0",
+    "esbuild-register": "^3.3.2",
+    "eslint": "^8.15.0",
+    "eslint-plugin-jest": "^27.2.3",
+    "jest": "^28.1.0",
+    "prettier": "2.6.2"
+  }
+}

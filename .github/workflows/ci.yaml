@@ -1,0 +1,24 @@
+name: ci-workflow
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - 'src/**'
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.14.0]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Node.js v${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: npm install
+      - name: Run test
+        run: npm test
