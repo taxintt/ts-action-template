@@ -8,7 +8,7 @@ module.exports = {
   testEnvironment: "node",
   testMatch: ['**/*.test.ts'],
   transform: {
-    '^.+\\.(ts|tsx)$': 'esbuild-jest',
+    '^.+\\.(ts|tsx)$': 'ts-jest',
   },
   verbose: true,
 };
